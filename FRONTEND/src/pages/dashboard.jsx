@@ -30,7 +30,7 @@ export default function Dashboard() {
 
     const fetchHistory = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL || "http://127.0.0.1:5000"}/history/${userId}`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL || "https://ai-fitness-tracker-d40q.onrender.com"}/history/${userId}`);
         const data = await response.json();
         setHistory(data);
       } catch (err) {

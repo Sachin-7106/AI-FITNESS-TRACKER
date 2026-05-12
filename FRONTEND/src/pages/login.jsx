@@ -14,7 +14,7 @@ export default function Login() {
 
     const endpoint = isLogin ? "/login" : "/register";
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL || "http://127.0.0.1:5000"}${endpoint}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || "https://ai-fitness-tracker-d40q.onrender.com"}${endpoint}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
